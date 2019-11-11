@@ -27,7 +27,7 @@ public:
         result.push_back(0);if(num==0) return result;
         result.push_back(1);if(num==1) return result;
         
-        int power_now=(int)pow(2,1),power_last=(int)pow(2,0);
+        int power_now=2,power_last=1;
         for(int i=2;i<=num;i++){
             if(i==power_now){
                 result.push_back(1);
@@ -40,4 +40,4 @@ public:
         return result;
     }
 };
-//72 ms	10.1 MB
+//72 ms	10 MB
